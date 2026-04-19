@@ -1,8 +1,9 @@
 flask
-opencv-python-headless
+flask-cors
+opencv-python
 numpy
 pytesseract
-pdf2image
 easyocr
+pdf2image
 reportlab
-Pillow
+pillow
