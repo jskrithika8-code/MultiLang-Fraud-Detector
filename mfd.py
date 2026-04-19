@@ -14,6 +14,7 @@ from reportlab.lib.utils import ImageReader
 
 # --- Flask setup ---
 app = Flask(__name__)
+CORS(app)
 UPLOAD_FOLDER = "uploads"
 OUTPUT_FOLDER = "outputs"
 ALLOWED_EXTENSIONS = {'png','jpg','jpeg','pdf'}
