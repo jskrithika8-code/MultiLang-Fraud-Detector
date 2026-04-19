@@ -25,9 +25,7 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 logging.basicConfig(level=logging.INFO)
 
 # --- EasyOCR setup ---
-EASYOCR_LANGS = [
-    'en','as','bn','gu','hi','kn','ml','mr','ne','or','pa','ta','te','ur'
-]
+EASYOCR_LANGS = ['en', 'hi', 'ta', 'te']  # ✅ SAFE supported languages
 
 try:
     easyocr_reader = easyocr.Reader(EASYOCR_LANGS, gpu=False)
