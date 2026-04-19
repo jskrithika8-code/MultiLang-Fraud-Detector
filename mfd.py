@@ -5,6 +5,7 @@ import uuid
 import pytesseract
 import logging
 from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
 from pdf2image import convert_from_path
 import easyocr
 from reportlab.lib.pagesizes import A4
